@@ -23,18 +23,15 @@ def convert_image():
         if save_path:
             image.save(save_path)
 
-# Создаем графический интерфейс
 root = tk.Tk()
 root.title("Image Converter")
 
-# Кнопки для открытия изображения и конвертации
 open_button = tk.Button(root, text="Open Image", command=open_image)
 open_button.pack(pady=10)
 
 convert_button = tk.Button(root, text="Convert Image", command=convert_image)
 convert_button.pack(pady=10)
 
-# Метка для отображения выбранного изображения
 image_label = tk.Label(root)
 image_label.pack()
 
